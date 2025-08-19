@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LensCraft — Photography Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./asscets/logo for Lenscraft.png">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="A clean, responsive photography portfolio built with HTML and CSS." />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">LensCraft</a>
+      <nav class="nav">
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero banner with featured photography">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Stories in every frame</h1>
+      <p>Portraits, weddings, and travel moments captured with intention and soul.</p>
+      <a href="#gallery" class="btn">View gallery</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="section-intro">A selection of recent work across portraits, weddings, and editorial travel.</p>
+
+        <div class="grid">
+          <a href="#img1" class="card">
+            <figure>
+              <img src="./asscets/golden hour portrait in a field.jpg" alt="Golden hour portrait in a field" />
+              <figcaption>Golden Hour</figcaption>
+            </figure>
+          </a>
+          <a href="#img2" class="card">
+            <figure>
+              <img src="./asscets/candid couple walking along a beach.jpg" alt="Candid couple walking along a beach" />
+              <figcaption>Coastal Walk</figcaption>
+            </figure>
+          </a>
+          <a href="#img3" class="card">
+            <figure>
+              <img src="./asscets/mountainscape at sunrises with low clouds.png" alt="Mountainscape at sunrise with low clouds" />
+              <figcaption>First Light</figcaption>
+            </figure>
+          </a>
+          <a href="#img4" class="card">
+            <figure>
+              <img src="./asscets/Motion Blur on Busy City Street.png" alt="City street scene with motion blur" />
+              <figcaption>City Pulse</figcaption>
+            </figure>
+          </a>
+          <a href="#img5" class="card">
+            <figure>
+              <img src="./asscets/Bride laughing during an outdoor ceremony.jpg" alt="Bride laughing during an outdoor ceremony" />
+              <figcaption>Joyful Vows</figcaption>
+            </figure>
+          </a>
+          <a href="#img6" class="card">
+            <figure>
+              <img src="./asscets/Minimalist architectural lines and shadows.png" alt="Minimalist architectural lines and shadows" />
+              <figcaption>Lines & Light</figcaption>
+            </figure>
+          </a>
+          <a href="#img7" class="card">
+            <figure>
+              <img src="./asscets/Traveler overlooking a desert landscape.png" alt="Traveler overlooking a desert landscape" />
+              <figcaption>Desert Gaze</figcaption>
+            </figure>
+          </a>
+          <a href="#img8" class="card">
+            <figure>
+              <img src="./asscets/Night sky full of stars above trees.png" alt="Night sky full of stars above trees" />
+              <figcaption>Starlit Quiet</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <!-- CSS-only Lightbox (uses :target) -->
+      <div id="img1" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/golden hour portrait in a field.jpg" alt="Golden hour portrait in a field" />
+      </div>
+      <div id="img2" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/candid couple walking along a beach.jpg" alt="Candid couple walking along a beach" />
+      </div>
+      <div id="img3" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/mountainscape at sunrises with low clouds.png" alt="Mountainscape at sunrise with low clouds" />
+      </div>
+      <div id="img4" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/Motion Blur on Busy City Street.png" alt="City street scene with motion blur" />
+      </div>
+      <div id="img5" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/Bride laughing during an outdoor ceremony.jpg" alt="Bride laughing during an outdoor ceremony" />
+      </div>
+      <div id="img6" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/Minimalist architectural lines and shadows.png" alt="Minimalist architectural lines and shadows" />
+      </div>
+      <div id="img7" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/Traveler overlooking a desert landscape.png" alt="Traveler overlooking a desert landscape" />
+      </div>
+      <div id="img8" class="lightbox" aria-modal="true" role="dialog">
+        <a href="#gallery" class="close" aria-label="Close"></a>
+        <img src="./asscets/Night sky full of stars above trees.png" alt="Night sky full of stars above trees" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>I’m a photographer who believes the best images feel like memories—honest, textured, and full of life. From intimate portraits to sweeping landscapes, I look for light, connection, and detail.</p>
+          <p>Based in Tamil Nadu and available for travel.</p>
+        </div>
+        <div class="about-card">
+          <ul class="facts">
+            <li><strong>Specialties:</strong> Portraits, weddings, travel</li>
+            <li><strong>Style:</strong> Natural light, candid, editorial</li>
+            <li><strong>Turnaround:</strong> 7–14 days</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <div class="service">
+            <h3>Portrait Sessions</h3>
+            <p>Personal, family, or professional portraits on location or in-studio.</p>
+            <p class="meta">60–90 minutes • 15 edited images</p>
+          </div>
+          <div class="service">
+            <h3>Weddings & Events</h3>
+            <p>From quiet details to the big moments—full-day coverage available.</p>
+            <p class="meta">Custom packages • Online gallery</p>
+          </div>
+          <div class="service">
+            <h3>Editorial & Travel</h3>
+            <p>Commissioned stories for brands, magazines, and tourism boards.</p>
+            <p class="meta">Day rates • Licensing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">Tell me about your story—dates, locations, and what you’re dreaming of. I’ll reply within 24–48 hours.</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Project details, dates, locations…" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> LensCraft. All rights reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Behance">Behance</a>
+        <a href="#" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional: fallback year without JS by editing the text above -->
+  <noscript></noscript>
+</body>
+</html>
